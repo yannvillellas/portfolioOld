@@ -1,0 +1,52 @@
+/* BASE */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    font-size: 1.6rem;
+    color: #555;
+    margin: 0;
+    text-align: center;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #fff;
+    }
+}
+
+/* SECTIONS */
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.header__logo {
+    background-color: #f00;
+}
+
+/* VIDEO STOP AT 36:00 */
