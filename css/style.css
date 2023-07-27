@@ -5,7 +5,8 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
 }
 
 body {
@@ -37,6 +38,7 @@ h3, .h3 {
 
 a {
     text-decoration: none;
+    color: #555;
 }
 
 img {
@@ -68,7 +70,7 @@ img {
 
 @media screen and (min-width: 750px) {
     .container {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 2rem;
     }
@@ -101,6 +103,8 @@ section {
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: 2px;
+    padding: 0 1rem;
+    color:fff;
 }
 
 .navbar {
@@ -110,16 +114,28 @@ section {
 .header li {
     display: inline-flex;
     align-items: center;
-    padding: 0 .5rem;
 }
 
-.header a {
+.header .navbar li:first-child {
+    padding-left: 2rem;
+}
+
+.header .navbar li {
+    padding: 0 1rem;
+}
+
+.header .navbar li:last-child {
+    padding-right: 2rem;
+}
+
+.header .navbar a {
     color: #555;
     font-size: 1.4rem;
+    padding: 0;
 }
 
-.header a:hover {
-    color: #93a7ff;
+.header .navbar a:hover {
+    color: #8000ff;
 }
 
 .header .right {
@@ -133,10 +149,15 @@ section {
 
 .header .socials .icon {
     height: 18;
+    width: 18;
 }
 
-.header .socials a {
-    padding: 0 .5rem;
+.header .socials .icon:hover .icon__solid_color {
+    fill: #8000ff;
+}
+
+.header .socials li {
+    padding: 0 1rem;
 }
 
 .header .burger {
@@ -263,4 +284,4 @@ section {
 
 /* PROJECTS */
 
-/* EXPERIENCES */
+/* EXPERIENCES*/
