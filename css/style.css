@@ -1,18 +1,17 @@
 /* BASE */
-
 * {
     box-sizing: border-box;
 }
 
 html {
     font-size: .625em; /* fallback IE8+ */
-    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. */
 }
 
 body {
     font-family: Montserrat, sans-serif;
     font-size: 1.6rem;
-    color: #555;
+    color: #333;
     margin: 0;
 }
 
@@ -22,23 +21,33 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, .h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 h2, .h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
 h3, .h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
+}
+
+h4, .h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 a {
     text-decoration: none;
-    color: #555;
+    color: #333;
 }
 
 img {
@@ -52,7 +61,7 @@ img {
 }
 
 .container {
-    padding: 1rem 2rem;
+    padding: 1rem .5rem;
 }
 
 .d-flex {
@@ -69,24 +78,31 @@ img {
 }
 
 @media screen and (min-width: 750px) {
+    p {
+        font-size: 1.6rem;
+    }
+
     .container {
         max-width: 1400px;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 2rem 2rem;
     }
 }
 
 /* SECTIONS */
-
 section {
-    padding: 1rem
+    padding: .5rem
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 749px) {
+    .section {
+        padding: 1rem 0;
+    }
+
     .section-title {
         text-align: center;
     }
@@ -129,7 +145,7 @@ section {
 }
 
 .header .navbar a {
-    color: #555;
+    color: #333;
     font-size: 1.4rem;
     padding: 0;
 }
@@ -194,10 +210,6 @@ section {
     transform: translateY(8px);
 }
 
-@media screen and (max-width: 749px) {
-    
-}
-
 @media screen and (min-width: 750px) {
     .header .navbar {
         display: flex;
@@ -208,7 +220,6 @@ section {
 }
 
 /* HOME */
-
 .home {
     background-color: #8000ff;
     color: #fff;
@@ -265,7 +276,12 @@ section {
     }
 
     .home .title {
-        font-size: 5rem;
+        font-size: 4rem;
+        margin: 3rem 0;
+    }
+
+    .home .subtitle {
+        font-size: 2rem;
     }
 
     .home__item.left {
@@ -283,5 +299,6 @@ section {
 }
 
 /* PROJECTS */
+
 
 /* EXPERIENCES*/
