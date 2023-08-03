@@ -77,6 +77,13 @@ img {
     justify-content: center;
 }
 
+.grid__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
 @media screen and (min-width: 750px) {
     h1, .h1 {
         font-size: 4rem;
@@ -127,7 +134,7 @@ section {
 /* HEADER */
 .header {
     background-color: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #000;
 }
 
 .header .logo {
@@ -311,5 +318,14 @@ section {
 
 /* PROJECTS */
 
+/* SKILLS */
+.skills .progressbar {
+    background: #000;
+    color: #fff;
+    margin-bottom: 1rem;
+}
 
-/* EXPERIENCES*/
+.skills .progressbar .bar {
+    background: #8000ff;
+    padding: 1rem;
+}
