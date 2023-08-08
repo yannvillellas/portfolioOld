@@ -293,27 +293,33 @@
                 <h2 class="section-title">Contact</h2>
                 <p class="section-subtitle">Vous pouvez me contacter via ce formulaire.</p>
             </div>
-            <form action="contact php" class="form">
-                <label for="firstname">
-                    <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+            <form action="contact.php" class="form">
+                <div class="grid">
+                    <div class="grid__item firstname">
+                        <label for="firstname">Prénom
+                            <input type="text" name="firstname" id="firstname" placeholder="Yann">
+                        </label>
+                    </div>
+                    <div class="grid__item lastname">
+                        <label for="lastname">Nom
+                            <input type="text" name="lastname" id="lastname" placeholder="Villellas">
+                        </label>
+                    </div>
+                </div>
+                <label for="email">E-mail
+                    <input type="email" name="email" id="email" placeholder="yann.villellas@edu.devinci.fr">
                 </label>
-                <label for="lastname">
-                    <input type="text" name="lastname" id="lastname" placeholder="Nom">
+                <label for="message">Message
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Écrivez votre message ici afin de me contacter."></textarea>
                 </label>
-                <label for="email">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                </label>
-                <label for="message">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                </label>
-                <input type="submit" value="Envoyer">
+                <input class="submit" type="submit" value="Envoyer">
             </form>
         </div>
-    </section>
+    </section>    
     <footer>
         <div class="container">
             <div class="grid">
-                <div class="grid__item">
+                <div class="grid__item logo">
                     <p>Yann Villellas</p>
                 </div>
                 <div class="grid__item">

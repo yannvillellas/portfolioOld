@@ -135,7 +135,7 @@ section {
 /* HEADER */
 .header {
     background-color: #fff;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #ccc;
     position: sticky;
     z-index: 1;
     top: 0;
@@ -409,4 +409,95 @@ section {
 .skills .progressbar .bar {
     background: #8000ff;
     padding: 1rem;
+}
+
+/* CONTACT */
+.contact .form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact .form input, .form textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact .form textarea {
+    resize: none;
+    min-height: 200px;
+}
+
+.contact .form .submit {
+    background: #8000ff;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #8000ff;
+    cursor: pointer;
+}
+
+.contact .form .submit:hover{
+    background: #fff;
+    color: #8000ff;
+    border: 1px solid #8000ff;
+}
+
+.contact .grid__item{
+    padding: 1px 2px;
+}
+
+.contact .form input:focus, .form textarea:focus {
+    outline: 1px solid #8000ff;
+}
+
+@media screen and (min-width: 750px) {
+    .contact .firstname {
+        padding-right: 2rem;
+    }
+
+    .contact .lastname {
+        padding-left: 2rem;
+    }
+}
+
+/* FOOTER */
+footer {
+    background: #8000ff;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+footer .logo p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding: 0 1rem;
+    color:fff;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer .socials .icon {
+    height: 18;
+    width: 18;
+}
+
+footer .socials li {
+    padding: 0 1rem;
 }
