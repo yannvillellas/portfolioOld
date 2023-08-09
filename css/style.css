@@ -1,4 +1,13 @@
 /* BASE */
+:root {
+    --primary-color: #8000ff;
+    --secondary-color: #333;
+    --secondary-dark-color: #ccc;
+    --light-color: #fff;
+    --secondary-light-color: #eee;
+    --dark-color: #000;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -11,13 +20,13 @@ html {
 body {
     font-family: Montserrat, sans-serif;
     font-size: 1.6rem;
-    color: #333;
+    color: var(--secondary-color);
     margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: var(--dark-color);
     line-height: 1;
 }
 
@@ -48,7 +57,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--secondary-color);
 }
 
 img {
@@ -134,8 +143,8 @@ section {
 
 /* HEADER */
 .header {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    background-color: var(--light-color);
+    border-bottom: 1px solid var(--secondary-light-color);
     position: sticky;
     z-index: 1;
     top: 0;
@@ -147,7 +156,7 @@ section {
     font-size: 2rem;
     letter-spacing: 2px;
     padding: 0 1rem;
-    color:fff;
+    color:var(--primary-color);
 }
 
 .navbar {
@@ -172,13 +181,14 @@ section {
 }
 
 .header .navbar a {
-    color: #333;
+    color: var(--secondary-color);
     font-size: 1.4rem;
     padding: 0;
 }
 
 .header .navbar a:hover {
-    color: #8000ff;
+    color: var(--primary-color);
+    transition: all .4s;
 }
 
 .header .right {
@@ -196,7 +206,8 @@ section {
 }
 
 .header .socials .icon:hover .icon__solid_color {
-    fill: #8000ff;
+    fill: var(--primary-color);
+    transition: all .4s;
 }
 
 .header .socials li {
@@ -217,7 +228,7 @@ section {
     display: block;
     width: 22px;
     height: 3px;
-    background-color: #333;
+    background-color: var(--secondary-color);
 }
 
 .header .burger .bar::before, .burger .bar::after{
@@ -225,7 +236,7 @@ section {
     content: '';
     width: 22px;
     height: 3px;
-    background-color: #333;
+    background-color: var(--secondary-color);
     position: absolute;
 }
 
@@ -248,8 +259,8 @@ section {
 
 /* HOME */
 .home {
-    background-color: #8000ff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .home .title {
@@ -322,7 +333,7 @@ section {
 
 /* PROJECTS */
 .projects .projects__filter a {
-    background: #eee;
+    background: var(--secondary-light-color);
     display: flex;
     flex: 1;
     padding: 1rem;
@@ -331,13 +342,13 @@ section {
 }
 
 .projects .projects__filter a.active {
-    background: #8000ff;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--light-color);
 }
 
 .projects .projects__filter a:hover {
-    background: #8000ff;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--light-color);
 }
 
 .projects .projects__filter .grid__item {
@@ -349,7 +360,7 @@ section {
 }
 
 .projects .projects__items .card {
-    background: #eee;
+    background: var(--secondary-light-color);
     padding: 1rem;
     border-radius: 10px;
     position: relative;
@@ -372,7 +383,7 @@ section {
 }
 
 .projects .projects__items .card .card__overlay a {
-    color: #fff;
+    color: var(--light-color);
     font-size: 4.5rem;
     display: flex;
     align-items: center;
@@ -401,19 +412,19 @@ section {
 
 /* SKILLS */
 .skills .progressbar {
-    background: #000;
-    color: #fff;
+    background: var(--secondary-color);
+    color: var(--light-color);
     margin-bottom: 1rem;
 }
 
 .skills .progressbar .bar {
-    background: #8000ff;
+    background: var(--primary-color);
     padding: 1rem;
 }
 
 /* CONTACT */
 .contact .form {
-    background: #fff;
+    background: var(--light-color);
     padding: 2rem;
     border-radius: 10px;
 }
@@ -424,7 +435,7 @@ section {
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--secondary-dark-color);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -434,18 +445,18 @@ section {
 }
 
 .contact .form .submit {
-    background: #8000ff;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--light-color);
     padding: 1rem;
     border-radius: 10px;
-    border: 1px solid #8000ff;
+    border: 1px solid var(--primary-color);
     cursor: pointer;
 }
 
 .contact .form .submit:hover{
-    background: #fff;
-    color: #8000ff;
-    border: 1px solid #8000ff;
+    background: var(--light-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 .contact .grid__item{
@@ -453,7 +464,7 @@ section {
 }
 
 .contact .form input:focus, .form textarea:focus {
-    outline: 1px solid #8000ff;
+    outline: 1px solid var(--primary-color);
 }
 
 @media screen and (min-width: 750px) {
@@ -468,20 +479,20 @@ section {
 
 /* FOOTER */
 footer {
-    background: #8000ff;
+    background: var(--primary-color);
     text-align: center;
     font-size: 1.4rem;
 }
 
 footer p {
     margin: 0;
-    color: #fff;
+    color: var(--light-color);
 }
 
 footer .logo p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     letter-spacing: 2px;
     padding: 0 1rem;
     color:fff;
@@ -489,8 +500,10 @@ footer .logo p {
 
 footer .socials {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-bottom: 1rem;
+    align-items: center;
+    height: 100%;
 }
 
 footer .socials .icon {
@@ -500,4 +513,18 @@ footer .socials .icon {
 
 footer .socials li {
     padding: 0 1rem;
+}
+
+footer .grid__item {
+    padding: 0rem;
+}
+
+@media screen and (min-width: 750px) {
+    footer .grid__item {
+        max-width: calc(100%/3);
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
 }
