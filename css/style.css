@@ -1,11 +1,12 @@
 /* BASE */
 :root {
     --primary-color: #8000ff;
-    --secondary-color: red;
+    --secondary-color: #d0a0ff;
     --light-color: #fff;
     --secondary-light-color: #eee;
     --dark-color: #000;
     --secondary-dark-color: #333;
+    --input-placeholder-color: #bebebe;
 }
 
 * {
@@ -390,6 +391,10 @@ section {
 }
 
 /* PROJECTS */
+.projects .projects__filter .grid__item {
+    max-width: 50%;
+}
+
 .projects .projects__filter a {
     background: var(--secondary-light-color);
     display: flex;
@@ -409,12 +414,12 @@ section {
     color: var(--light-color);
 }
 
-.projects .projects__filter .grid__item {
-    max-width: 50%;
-}
-
 .projects .projects__items .grid__item {
     width: 50%;
+}
+
+.projects .projects__items .grid__item.hide {
+    display: none;
 }
 
 .projects .projects__items .card {
@@ -511,6 +516,10 @@ section {
     border-radius: 10px;
     border: 1px solid var(--secondary-light-color);
     font-family: 'Montserrat', sans-serif;
+}
+
+.contact .form input::placeholder, .form textarea::placeholder {
+    color: var(--input-placeholder-color);
 }
 
 .contact .form textarea {
