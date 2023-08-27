@@ -426,7 +426,7 @@ section {
     background: var(--secondary-light-color);
     border-radius: 10px;
     position: relative;
-    border: 1px solid var(--secondary-dark-color);
+    /* border: 1px solid var(--secondary-dark-color); */
 }
 /* FIXME: gap between image/inner border and card border */
 
@@ -494,11 +494,13 @@ section {
     background: var(--secondary-light-color);
     color: var(--light-color);
     margin-bottom: 1rem;
+    border-radius: 50px;
 }
 
 .skills .progressbar .bar {
     background: var(--primary-color);
-    padding: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
 }
 
 /* CONTACT */

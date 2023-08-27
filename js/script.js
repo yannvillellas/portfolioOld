@@ -18,6 +18,8 @@ function showNavbar() {
 showNavbar();
 
 // PROJECTS
+
+// filters
 function tabsFilter() {
     const filters = document.querySelectorAll('.projects .projects__filter a');
     const projects = document.querySelectorAll('.projects .card');
@@ -54,4 +56,12 @@ function tabsFilter() {
 
 tabsFilter();
 
-// FIXME
+//overlay
+
+function showProjectDetails(){
+
+}
+
+showProjectDetails();
+
+//stopped the video at 1:51:00
