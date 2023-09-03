@@ -102,7 +102,7 @@ const observerIntersectionAnimation = () => {
   
     skills.forEach(skill => {
       skill.style.width = "0";
-      skill.style.transition = "all 1.6s";
+      skill.style.transition = "all .4s";
     });
   
     let sectionObserver = new IntersectionObserver(function (entries) {
