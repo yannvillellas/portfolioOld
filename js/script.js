@@ -86,3 +86,48 @@ tabsFilter();
 // showProjectDetails();
 
 // 4:48:00 I stopped where I must add the modal css
+
+// EFFECTS
+
+// scroll reveal
+const observerIntersectionAnimation = () => {
+    const sections = document.querySelectorAll('section');
+    const skills = document.querySelectorAll('.skills .bar');
+  
+    sections.forEach((section, index) => {
+      if (index === 0) return;
+      section.style.opacity = "0";
+      section.style.transition = "all 1.6s";
+    });
+  
+    skills.forEach(skill => {
+      skill.style.width = "0";
+      skill.style.transition = "all 1.6s";
+    });
+  
+    let sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+        }
+      });
+    });
+  
+    sections.forEach(section => {
+      sectionObserver.observe(section);
+    });
+
+    let skillsObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.width = entry.target.dataset.width + '%';
+          }
+        });
+      });
+    
+      skills.forEach(skill => {
+        skillsObserver.observe(skill);
+      });
+    }
+
+observerIntersectionAnimation();
