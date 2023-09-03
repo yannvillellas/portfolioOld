@@ -186,7 +186,7 @@ section {
 
 .header .burger {
     background:none;
-    border:none;
+    border: none;
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -217,6 +217,7 @@ section {
 .header .burger .bar::after {
     transform: translateY(8px);
 }
+
 @media screen and (max-width: 749px) {
     .header .navbar{
         display: flex;
@@ -469,6 +470,10 @@ section {
     justify-content: center;
     width: 100%;
     height: 100%;
+}
+
+.projects .projects__items .card:hover .card__overlay {
+    display: block;
 }
 
 @media screen and (min-width: 750px) {

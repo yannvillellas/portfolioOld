@@ -56,12 +56,34 @@ function tabsFilter() {
 
 tabsFilter();
 
-//overlay
+// //overlay
 
-function showProjectDetails(){
+// function showProjectDetails(){
+//     const links = document.querySelectorAll('.projects .card__link');
+//     const modals = document.querySelectorAll('.projects .modal');
+//     const closeBtns = document.querySelectorAll('.projects .modal__close');
 
-}
+//     const hideModals = () => {
+//         modals.forEach(modal => {
+//             modal.classList.remove("show");
+//         });
+//     }
 
-showProjectDetails();
+//     links.forEach(link => {
+//         link.addEventListener('click', (event) => {
+//             event.preventDefault();
+//             document.querySelector(`[id=${link.dataset.id}]`).classList.add("show");
+//         });
+//     });
 
-//stopped the video at 1:51:00
+//     closeBtns.forEach(btn => {
+//         btn.addEventListener('click', () => {
+//             hideModals();
+//         });
+//     });
+// }
+
+// showProjectDetails();
+
+// 2:08:00
+// I stopped where I must add the modal css
