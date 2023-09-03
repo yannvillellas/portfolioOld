@@ -85,5 +85,4 @@ tabsFilter();
 
 // showProjectDetails();
 
-// 2:08:00
-// I stopped where I must add the modal css
+// 4:48:00 I stopped where I must add the modal css
