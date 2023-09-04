@@ -504,8 +504,11 @@ section {
 
 .skills .progressbar .bar {
     background: var(--primary-color);
+    border-radius: inherit;
     padding: 1rem 1.5rem;
-    border-radius: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
 
 /* CONTACT */
