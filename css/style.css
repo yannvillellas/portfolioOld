@@ -416,6 +416,7 @@ section {
 .projects .projects__filter a:hover {
     background: var(--primary-color);
     color: var(--light-color);
+    transition: all .4s;
 }
 
 .projects .projects__items .grid__item {
@@ -553,6 +554,7 @@ section {
     background: var(--light-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    transition: all .4s;
 }
 
 .contact .grid__item{
@@ -659,11 +661,11 @@ footer .grid__item {
     font-weight: 500;
     margin: 15vh 0 0 0;
     max-width: max-content;
-    transition: all .4s;
 }
 
 .thanks .link:hover {
     scale: 1.1;
+    transition: all .4s;
 }
 
 @media screen and (min-width: 750px) {
