@@ -1,7 +1,7 @@
 /* BASE */
 :root {
-    --primary-color: #8000ff;
-    --secondary-color: #d0a0ff;
+    --primary-color: #aa00ff;
+    --secondary-color: #e1ffc8;
     --light-color: #fff;
     --secondary-light-color: #eee;
     --dark-color: #000;
@@ -633,6 +633,7 @@ footer .grid__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -640,6 +641,7 @@ footer .grid__item {
     color: var(--primary-color);
     font-size: 5rem;
     font-weight: 900;
+    max-width: max-content;
     margin: 5vh 0;
 }
 
@@ -647,6 +649,7 @@ footer .grid__item {
     color: var(--secondary-dark-color);
     font-size: 2rem;
     font-weight: 700;
+    max-width: max-content;
     margin: 5vh 0;
 }
 
@@ -655,6 +658,7 @@ footer .grid__item {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 15vh 0 0 0;
+    max-width: max-content;
     transition: all .4s;
 }
 
