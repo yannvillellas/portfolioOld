@@ -624,3 +624,54 @@ footer .grid__item {
         font-size: 1.2rem;
     }
 }
+
+/* THANKS */
+.thanks {
+    background: var(--light-color);
+    text-align: center;
+    padding: 20vh 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.thanks .title {
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 5vh 0;
+}
+
+.thanks .subtitle {
+    color: var(--secondary-dark-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 5vh 0;
+}
+
+.thanks .link {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 15vh 0 0 0;
+    transition: all .4s;
+}
+
+.thanks .link:hover {
+    scale: 1.1;
+}
+
+@media screen and (min-width: 750px) {
+    .thanks .title {
+        font-size: 10rem;
+    }
+
+    .thanks .subtitle {
+        font-size: 3rem;
+    }
+
+    .thanks .link {
+        font-size: 2rem;
+    }
+}
